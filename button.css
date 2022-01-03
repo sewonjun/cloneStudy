@@ -1,0 +1,131 @@
+.onlyone {
+    display: flex ;
+    position: relative;
+    left: 20%;
+    top: 20%;
+}
+
+.selecttwo {
+    display: flex ;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+.contOne, .contTwo {
+    width: 500px;
+    height: 300px;
+    border: 3px solid black;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+
+}
+
+.contThree {
+    width: 500px;
+    height: 150px;
+    border: 3px solid black;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+}
+
+input[type=radio] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+}
+input[type=radio] + label{
+    /* margin: 5px; */
+    width: 100px;
+    height: 50px;
+    padding: .75em 1.0em;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    border: solid 1px rgb(233, 233, 233);
+    background-color: rgb(176, 124, 124);
+    color: #fff;
+    font-weight: border;
+    line-height: 140%;
+    text-align: center;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: border-color .15s ease-out,  color .25s ease-out,  background-color .15s ease-out, box-shadow .15s ease-out;
+    cursor: pointer;
+}
+
+input[type=radio]:checked + label{
+    position: relative;
+    background-color: rgb(245, 147, 147);
+    color: #FFF;
+    font-weight: bolder;
+    box-shadow: 0 0 10px rgba(55, 56, 57, 0.5);
+    border-color: rgba(233 ,233, 233);
+    z-index: 1;
+}
+
+input[type=checkbox] {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+input[type=checkbox] + label{
+    margin: 0px;
+    padding: .75em 1.5em;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    border: solid 1px rgb(233, 233, 233);
+    background-color: rgb(176, 124, 124);
+    color: #fff;
+    font-weight: normal;
+    line-height: 120%;
+    text-align: center;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+    transition: border-color .15s ease-out,  color .25s ease-out,  background-color .15s ease-out, box-shadow .15s ease-out;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked + label{
+    background-color: rgb(245, 147, 147);
+    color: #FFF;
+    font-weight: bolder;
+    box-shadow: 0 0 10px rgba(55, 56, 57, 0.5);
+    border-color: rgba(233 ,233, 233);
+    z-index: 1;
+}
+
+.contOne h2 {
+    position: relative;
+    left: 20%;
+    top: 10%;
+}
+
+.contTwo h2 {
+    position: relative;
+    left: 25%;
+    top: 10%;
+}
+.contThree h2 {
+    position: relative;
+    left: 30%;
+    top: 10%;
+    margin-bottom: 50px;
+}
+.file {
+    position: relative;
+    display: inline-block;
+}
+
+.file input{
+    position: relative;
+    left: 60%;
+    /* top: 0%; */
+    border: 1px thin rgb(0, 0, 0);
+    justify-content: center;
+}
