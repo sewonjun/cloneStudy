@@ -104,6 +104,7 @@ progress {
 .reach {
     display: flex;
     align-items: flex-start;
+    display: inline-block;
 }
 
 .reached-per {
