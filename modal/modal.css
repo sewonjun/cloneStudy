@@ -44,7 +44,14 @@ a {
     background-color: rgb(136, 83, 148);
     background-size: 100%;
 }
-
+.contents {
+    position: fixed;
+    left: 340px;
+    top:calc(50% - 10px);
+    justify-content: center;
+    align-items: center;
+    font: 20px serif;
+}
 .ball {
     width: 100px;
     height: 100px;
