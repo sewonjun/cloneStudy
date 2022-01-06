@@ -111,11 +111,11 @@ a {
         transform: translate(640px, 0);
     }
     50% {
-        transform: translate(640px, calc(40vh - 50px));
+        transform: translate(640px, calc(40vh - 60px));
     }
 
     75% {
-        transform: translate(0, calc(40vh - 50px));
+        transform: translate(0, calc(40vh - 60px));
     }
     100% {
         transform: translate(0 , 0);
