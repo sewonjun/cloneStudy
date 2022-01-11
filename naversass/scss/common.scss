@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import "./reset.scss";
+
+$gray: #8e8e8e;
+
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    position:relative;
+    margin-left: 26px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    padding-left: 20px;
+}
+
+input[type = "checkbox"] {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -60%);
+    width: 24px;
+    height: 24px;
+    background: url(https://static.nid.naver.com/images/ui/myinfo/m_check_off_24.png) no-repeat 0 0;
+    background-size: cover;
+    
+}
+
+label:hover::before{
+    background: url(https://static.nid.naver.com/images/ui/myinfo/m_check_on_l_24.png);
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+}

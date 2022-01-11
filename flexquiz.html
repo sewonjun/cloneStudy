@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX 개념알기</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 100px auto;
+            width: 500px;
+            border: 1px solid black;
+        }
+
+        .wrap div {
+            height: 100px;
+        }
+
+        .a {
+            background-color: slateblue;
+        }
+
+        .b {
+            background-color: olive;
+
+
+        }
+
+        .c {
+            background-color: gold;
+            /* flex-grow:1; */
+
+        }
+
+        .d {
+            background-color: blue;
+
+        }
+
+        .e {
+            background-color: sienna;
+        }
+
+        .box1 .a {
+            flex-basis: 50%;
+        }
+
+        .box1 .b {
+            flex-basis: 50%;
+        }
+
+        .box1 .c {
+            flex-basis: 100%;
+        }
+
+        .box2 .a {
+            flex-basis: 100%;
+        }
+
+        .box2 .b {
+            flex: 1 0 50%;
+        }
+
+        .box2 .c {
+            flex: 1 0 50%;
+        }
+
+        .box2 .d {
+            flex-grow: 1;
+        }
+
+        .box3 .a {
+            flex-basis: 33.3%;
+        }
+
+        .box3 .b {
+            flex-basis: 33.3%;
+        }
+
+        .box3 .c {
+            flex-basis: 33.4%;
+        }
+
+        .box3 .d {
+            flex: 1 0 33.3%;
+        }
+
+        .box3 .e {
+            flex: 1 0 33.3%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        STUDY GROUP
+    </p>
+    <article></article>
+    <div class="wrap box1">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+    </div>
+    <div class="wrap box2">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D</div>
+    </div>
+    <div class="wrap box3">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D</div>
+        <div class="e">E</div>
+    </div>
+</body>
+
+</html>
