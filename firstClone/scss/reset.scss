@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,b,th {
+    font-weight: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li,
+fieldset, blockquote
+{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+
+
+
+
+
+.hide {
+    position: absolute;
+    left: -9999px;
+    width:1px;
+    height: 1px;
+}
