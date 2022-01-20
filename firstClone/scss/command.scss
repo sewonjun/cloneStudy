@@ -1,6 +1,40 @@
+@charset "utf-8";
+@import "./reset.scss";
+
 body {
-    width: 100vw;
-    height: 100vh;
-    background: url(../images/mvis_02.jpg);
-    background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  width: auto;
+  img {
+    width: 142px;
+    height: 22px;
+  }
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.section-one {
+  background: url(../images/mvis_02.jpg);
+  background-size: cover;
+  height: 100vh;
 }
